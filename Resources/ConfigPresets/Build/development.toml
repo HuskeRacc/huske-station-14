@@ -1,13 +1,13 @@
-﻿[game]
+[game]
 # Straight in-game baby
 lobbyenabled = false
 # Dev map for faster loading & convenience
-map = "Dev"
+map = "Reach"
 role_timers = false
 role_loadout_timers = false
 
 [events]
-enabled = false
+enabled = true
 
 [ghost]
 role_time = 0.5

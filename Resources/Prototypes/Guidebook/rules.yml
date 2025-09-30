@@ -6,7 +6,8 @@
   name: guide-entry-rules
   ruleEntry: true
   priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/DefaultRules.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/huskerules.xml"
+    
 
 - type: guideEntry
   id: CoreRuleset

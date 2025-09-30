@@ -83,6 +83,7 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
+  - MeteorSwarmScheduler
 
 - type: gamePreset
   id: Greenshift
@@ -90,11 +91,23 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: false #4boring4vote
+  showInVote: true #4boring4vote
   description: greenshift-description
   rules:
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Huske
+  alias:
+  - huske
+  name: huske-title
+  showInVote: true
+  description: huske-description
+  rules:
+  - SpaceTrafficControlFriendlyEventScheduler
+  - BasicRoundstartVariation
+  - HuskeMeteorSwarmScheduler
 
 - type: gamePreset
   id: Dynamic
@@ -160,7 +173,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31

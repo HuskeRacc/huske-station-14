@@ -26,6 +26,18 @@
     - id: VentClog
 
 - type: entityTable
+  id: HuskeEventsTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - id: BluespaceArtifact
+    - id: BreakerFlip
+    - id: BureaucraticError
+    - id: ClericalError
+    - id: MassHallucinations
+    - id: MouseMigration
+    - id: PowerGridCheck
+
+- type: entityTable
   id: BasicAntagEventsTable
   table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
     children:

@@ -70,6 +70,19 @@
 
 - type: entity
   parent: BaseGameRule
+  id: HuskeMeteorSwarmScheduler
+  components:
+  - type: GameRule
+  - type: BasicStationEventScheduler
+    minimumTimeUntilFirstEvent: 600 # 10 min
+    minMaxEventTiming:
+      min: 1200 # 20 min
+      max: 2400 # 40 min
+    scheduledGameRules: !type:NestedSelector
+      tableId: MeteorSwarmMildTable
+
+- type: entity
+  parent: BaseGameRule
   id: MeteorSwarmMildScheduler
   components:
   - type: GameRule
