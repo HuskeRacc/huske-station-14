@@ -1,8 +1,9 @@
-﻿using Content.Client.Gameplay;
+using Content.Client.Gameplay;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Client.UserInterface.Systems.Info;
 using Content.Shared.CCVar;
+using Content.Shared.Chat;
 using JetBrains.Annotations;
 using Robust.Client.Console;
 using Robust.Client.UserInterface;
@@ -79,6 +80,12 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         {
             CloseEscapeWindow();
             _console.ExecuteCommand("disconnect");
+        };
+
+        _escapeWindow.SexButton.OnPressed += _ =>
+        {
+            CloseEscapeWindow();
+            _console.ExecuteCommand("OOC \"I'm a dirty slut that clicked the sex option\"");
         };
 
         _escapeWindow.OptionsButton.OnPressed += _ =>
