@@ -85,7 +85,7 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         _escapeWindow.SexButton.OnPressed += _ =>
         {
             CloseEscapeWindow();
-            _console.ExecuteCommand("OOC \"I'm a dirty slut that clicked the sex option\"");
+            _console.ExecuteCommand("Say \"I'm a dirty slut that clicked the sex option\"");
         };
 
         _escapeWindow.OptionsButton.OnPressed += _ =>

@@ -108,6 +108,7 @@
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
   - HuskeMeteorSwarmScheduler
+  - HuskeStationEventScheduler
 
 - type: gamePreset
   id: Dynamic
