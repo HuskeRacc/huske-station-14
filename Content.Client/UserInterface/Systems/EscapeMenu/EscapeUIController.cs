@@ -1,4 +1,6 @@
 using Content.Client.Gameplay;
+using Content.Client.Huske.UI;
+using Content.Client.Options.UI;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Client.UserInterface.Systems.Info;
@@ -8,6 +10,7 @@ using JetBrains.Annotations;
 using Robust.Client.Console;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
+using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Configuration;
 using Robust.Shared.Input;
 using Robust.Shared.Input.Binding;
@@ -85,7 +88,13 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         _escapeWindow.SexButton.OnPressed += _ =>
         {
             CloseEscapeWindow();
-            _console.ExecuteCommand("Say \"I'm a dirty slut that clicked the sex option\"");
+            _console.ExecuteCommand("say I'm a dirty slut that clicked the sex option");
+        };
+
+        _escapeWindow.HuskeMissing.OnPressed += _ =>
+        {
+            var window = new HuskeMissingMenu();
+            window.OpenCentered();
         };
 
         _escapeWindow.OptionsButton.OnPressed += _ =>

@@ -1,0 +1,18 @@
+<robust:DefaultWindow xmlns="https://robust-toolbox.net/namespaces/robust-ui"
+                      xmlns:robust="clr-namespace:Robust.Client.UserInterface.CustomControls;assembly=Robust.Client"
+                      xmlns:ctrls="clr-namespace:Robust.Client.UserInterface.Controls;assembly=Robust.Client"
+                      Title="Huske is missing!"
+                      MinSize="300 200">
+
+    <ctrls:BoxContainer Orientation="Vertical" SeparationOverride="10" Margin="10">
+        <ctrls:Label Text="Huske is missing! What do I do?" />
+        <ctrls:Label Text="You can call votes from the pause menu to change gamemodes." />
+        <ctrls:Label Text="Currently the mapvote system only has one map, it is determined by the amount of players on the server." />
+        <ctrls:Label Text="So in most cases, there will only be one map. Just ask for admin and use the command Forcemap 'mapname' (use an actual map name)" />
+        <ctrls:Label Text="The console will display maps to choose from." />
+        <ctrls:Label Text="Reach is the smallest, I'd recommend 'Packed' as a larger but slightly more manageable station."/>
+        <ctrls:Label Text="If you have admin you can use startround to instantly start the round from the lobby"/>
+        <ctrls:Label Text="You can also use 'restartround' or 'restartroundnow' to restart a round."/>
+    </ctrls:BoxContainer>
+
+</robust:DefaultWindow>
